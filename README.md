@@ -1,8 +1,8 @@
 # Hardware accelerator for EV3a
 
 >linking list <br/>
-[Python](/EC_FINAL_PROJECT/EC_FINAL_PROJECT/python/README.md) <br/>
-[verilog](/EC_FINAL_PROJECT/EC_FINAL_PROJECT/verilog/README.md) <br/>
+[Python](/EC_FINAL_PROJECT/python/README.md) <br/>
+[verilog](/EC_FINAL_PROJECT/verilog/README.md) <br/>
 
 ## I.  Table of content
 1. [Introduction](#ii-introduction)
@@ -114,5 +114,5 @@ generic algorithm," 2010 IEEE 26-th Convention of Electricaland   Electronics En
 http://csg.csail.mit.edu/6.375/6_375_2019_www/index.html <br/>
 [4] Heather Berlin, Zachary Zumbo. Hardware Accelerated Genetic
 Optimization for PCB Layer Assignment . 
-http://csg.csail.mit.edu/6.375/6_375_2019_www/handouts/finals/ Group_1_report.pdf <br/>
-[5] ECE 4514 Digital Design II Spring 2008 Lecture 6: A Random  Number Generator. Patrick Schaumont. http://rdsl.csit-sun.pubro/  docs/PROIECTARE%20cu%20FPGA%20CURS/lecture6[1].pdf
+http://csg.csail.mit.edu/6.375/6_375_2019_www/handouts/finals/Group_1_report.pdf <br/>
+[5] ECE 4514 Digital Design II Spring 2008 Lecture 6: A Random  Number Generator. Patrick Schaumont. http://rdsl.csit-sun.pubro/docs/PROIECTARE%20cu%20FPGA%20CURS/lecture6[1].pdf

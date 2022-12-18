@@ -3,6 +3,7 @@
 2. [software vs. hardware](#software-vs-hardware)
 3. [Result](#result)
 4. [Suggestion](#suggestion)
+5. [Execuate](#commend)
 
 ## Hardward Structure
 
@@ -39,3 +40,17 @@
 
 ## Suggestion
 &emsp;&emsp;we can add self adaptive mutate in MU GEN, and write back when currentState_MU == conduct_tour.
+
+## Commend
+```
+# Run Ncverilog RTL simulation 
+sh 01_run_RTL  
+# Run synthesize
+sh 03_run_dc
+# Run Gate Level simulation
+sh 02_run_Gate
+# Run Post sim
+sh 04_run_POST
+# Run clean file
+sh 09_clean_up
+```
