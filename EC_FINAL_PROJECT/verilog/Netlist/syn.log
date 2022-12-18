@@ -1,0 +1,1153 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version N-2017.09-SP2 for linux64 - Nov 27, 2017 
+
+                    Copyright (c) 1988 - 2017 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/rain/.synopsys_dv_prefs.tcl
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+#  Set Libraries
+#======================================================
+source synopsys_dc.setup
+Information: Variable 'hdlin_translate_off_skip_text' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+1
+#======================================================
+#  Global Parameters
+#======================================================
+set DESIGN "EV3a"
+EV3a
+#======================================================
+#  Read RTL Code
+#======================================================
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -library WORK -format verilog {EV3a.v}
+Running PRESTO HDLC
+Compiling source file ./EV3a.v
+Opening include file fitness_eval.v
+Opening include file LFSR.v
+Warning:  fitness_eval.v:326: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  fitness_eval.v:326: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  fitness_eval.v:338: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  fitness_eval.v:338: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:162: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:170: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:169: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:426: A unnamed generate block with an LRM-defined name 'genblk3' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:432: A unnamed generate block with an LRM-defined name 'genblk4' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:457: A unnamed generate block with an LRM-defined name 'genblk5' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:476: A unnamed generate block with an LRM-defined name 'genblk6' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:498: A unnamed generate block with an LRM-defined name 'genblk7' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:508: A unnamed generate block with an LRM-defined name 'genblk8' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:516: A unnamed generate block with an LRM-defined name 'genblk9' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./EV3a.v:591: A unnamed generate block with an LRM-defined name 'genblk10' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Loading db file '/usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/fast.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+elaborate EV3a -architecture verilog -library DEFAULT
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'fast'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ./EV3a.v:109: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./EV3a.v:110: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./EV3a.v:177: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./EV3a.v:219: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./EV3a.v:225: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./EV3a.v:375: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./EV3a.v:376: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./EV3a.v:458: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 192 in file
+	'./EV3a.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           193            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine EV3a line 183 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 204 in file
+		'./EV3a.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| currentState_CRX_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+| currentState_MU_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 217 in file
+		'./EV3a.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| generation_counter_reg | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+| generation_counter_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 230 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| global_counter_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 247 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pop_rf_reg      | Flip-flop | 1600  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 264 in file
+		'./EV3a.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| pop_offspring_rf_reg | Flip-flop | 1600  |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 295 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  self_energy_r_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 308 in file
+		'./EV3a.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| interact_energy_r_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 321 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| in_valid_self_r_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 334 in file
+		'./EV3a.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| in_valid_interact_r_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 350 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  idx_ptr_2_d2_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   idx_ptr_1_d_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   idx_ptr_2_d_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 360 in file
+		'./EV3a.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| offMutateRate_CRX_d_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 370 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| random_idx_1_r_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| random_idx_2_r_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 416 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  OffInd2_DF_d_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   PopInd_DF_d_reg   | Flip-flop |  40   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  OffInd1_DF_d_reg   | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 439 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  newStateCRX_d_reg  | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 447 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  offFit_CRX_d_reg   | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 462 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| random_state_r_reg  | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 484 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      stall_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 530 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 544 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| Best_ind_mut_o_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 559 in file
+		'./EV3a.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| Best_ind_state_o_reg | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine EV3a line 574 in file
+		'./EV3a.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Min_fit_o_reg    | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'EV3a'.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=78". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED78 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED78 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=79". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED79 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED79 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=80". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED80 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED80 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=81". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED81 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED81 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=82". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED82 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED82 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=83". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED83 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED83 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=84". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED84 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED84 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=85". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED85 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED85 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=86". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED86 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED86 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=87". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED87 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED87 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'LSFR' instantiated from design 'EV3a' with
+	the parameters "S_WIDTH=8,RANDOM_SEED=88". (HDL-193)
+Warning:  LFSR.v:24: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 22 in file
+	'LFSR.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED88 line 31 in file
+		'LFSR.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LSFR_S_WIDTH8_RANDOM_SEED88 line 74 in file
+		'LFSR.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| random_num_ff_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fitness_eval' instantiated from design 'EV3a' with
+	the parameters "NUM_PARTICLE_TYPE=3,DATA_WIDTH=4,PARTICLE_LENGTH=2,LATTICE_LENGTH=11,SELF_FIT_LENGTH=10,INDIVIDUAL_LENGTH=22,POP_SIZE=40,IDX_WIDTH=8". (HDL-193)
+Warning:  fitness_eval.v:107: signed to unsigned conversion occurs. (VER-318)
+Warning:  fitness_eval.v:108: signed to unsigned conversion occurs. (VER-318)
+Warning:  fitness_eval.v:455: signed to unsigned conversion occurs. (VER-318)
+Warning:  fitness_eval.v:456: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 124 in file
+		'fitness_eval.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  in_valid_buf_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   ind_idx_buf_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 141 in file
+		'fitness_eval.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| individual_buffer_reg | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 165 in file
+		'fitness_eval.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| self_energy_vec_rf_reg | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 193 in file
+		'fitness_eval.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| interact_matrix_rf_reg | Flip-flop |  36   |  Y  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 229 in file
+		'fitness_eval.v'.
+========================================================================================
+|        Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+========================================================================================
+| self_energy_DF_ADD1_pipe_reg | Flip-flop |  55   |  Y  | N  | Y  | N  | N  | N  | N  |
+========================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 248 in file
+		'fitness_eval.v'.
+============================================================================================
+|          Register Name           |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================================
+| interact_energy_DF_ADD1_pipe_reg | Flip-flop |  50   |  Y  | N  | Y  | N  | N  | N  | N  |
+============================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 268 in file
+		'fitness_eval.v'.
+===========================================================================================
+|          Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================================
+| individual_vec_DF_ADD1_pipe_reg | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+===========================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 288 in file
+		'fitness_eval.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| in_valid_DF_ADD1_pipe_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| ind_idx_DF_ADD1_pipe_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 358 in file
+		'fitness_eval.v'.
+=============================================================================================
+|           Register Name           |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=============================================================================================
+| partial_energy_ADD1_ADD2_pipe_reg | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+=============================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 377 in file
+		'fitness_eval.v'.
+=======================================================================================
+|        Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=======================================================================================
+| in_valid_ADD1_ADD2_pipe_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| ind_idx_add1_add2_pipe_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+=======================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 393 in file
+		'fitness_eval.v'.
+=============================================================================================
+|           Register Name           |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=============================================================================================
+| individual_vec_ADD1_ADD2_pipe_reg | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+=============================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 414 in file
+		'fitness_eval.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| individual_cnt_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 461 in file
+		'fitness_eval.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| total_energy_ff_o_reg | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 474 in file
+		'fitness_eval.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| individual_vec_ff_o_reg | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8 line 487 in file
+		'fitness_eval.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| out_valid_ff_o_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| ind_wb_idx_ff_o_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    done_ff_o_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
+current_design $DESIGN
+Current design is 'EV3a'.
+{EV3a}
+link > Report/$DESIGN\.link
+#======================================================
+#  Set Design Constraints
+#======================================================
+source -echo -verbose syn_tcl/$DESIGN\.sdc
+# operating conditions and boundary conditions #
+set clk_period 6.0
+6.0
+create_clock -name "clk" -period $clk_period clk 
+1
+set_dont_touch_network      [all_clocks]
+1
+set_fix_hold                [all_clocks]
+1
+set_clock_uncertainty  0.1  [all_clocks]
+1
+set_clock_latency      0.5  [all_clocks]
+1
+set_ideal_network           [get_ports clk]
+1
+set_input_delay  [ expr $clk_period*0.5 ] -clock clk [all_inputs]
+1
+set_output_delay [ expr $clk_period*0.5 ] -clock clk [all_outputs]
+1
+set_input_delay 0 -clock clk rst_n
+1
+set_load 1 [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+set_max_delay $clk_period -from [all_inputs] -to [all_outputs]
+1
+1
+#set_dont_use slow/JKFF*
+#======================================================
+#  Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+uniquify
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+current_design $DESIGN
+Current design is 'EV3a'.
+{EV3a}
+#set_false_path -from clk -to [get_cells */latch_or_sleep_reg ]
+#uniquify
+compile_ultra -area
+Warning: The -area_high_effort_script option is ignored. To enable further area optimization, use the optimize_netlist -area command. (OPT-1341)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | N-2017.09-DWBB_201709.2 |     *     |
+| Licensed DW Building Blocks        | N-2017.09-DWBB_201709.2 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 21 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'EV3a'
+
+  Loading target library 'fast'
+Loaded alib file './alib-52/slow.db.alib'
+Loaded alib file './alib-52/fast.db.alib'
+Warning: Operating condition slow set on design EV3a has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fast is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy genblk10[0].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[1].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[2].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[3].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[4].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[5].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[6].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[7].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[8].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[9].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy genblk10[10].inst_LSFR before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy inst_fitness_eval before Pass 1 (OPT-776)
+Information: Ungrouping 12 of 13 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'EV3a'
+Information: Added key list 'DesignWare' to design 'EV3a'. (DDB-72)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[0][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[1][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[2][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[3][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[4][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[5][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[6][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[7][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[8][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[9][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/self_energy_DF_ADD1_pipe_reg[10][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[0][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[1][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[2][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[3][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[4][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[5][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[6][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[7][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[8][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/interact_energy_DF_ADD1_pipe_reg[9][0]' is a constant and will be removed. (OPT-1206)
+Information: In design 'EV3a', the register 'genblk10[9].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[8].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[7].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[6].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[5].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[4].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[3].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[2].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[1].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'genblk10[0].inst_LSFR/current_state_reg' is removed because it is merged to 'genblk10[10].inst_LSFR/current_state_reg'. (OPT-1215)
+Information: In design 'EV3a', the register 'random_idx_2_r_reg[6]' is removed because it is merged to 'random_idx_2_r_reg[7]'. (OPT-1215)
+Information: In design 'EV3a', the register 'random_idx_1_r_reg[6]' is removed because it is merged to 'random_idx_1_r_reg[7]'. (OPT-1215)
+ Implement Synthetic for 'EV3a'.
+Information: The register 'inst_fitness_eval/partial_energy_ADD1_ADD2_pipe_reg[2][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/partial_energy_ADD1_ADD2_pipe_reg[1][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inst_fitness_eval/partial_energy_ADD1_ADD2_pipe_reg[0][7]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'inst_fitness_eval/total_energy_ff_o_reg[9]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+Information: The register 'random_idx_2_r_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'random_idx_1_r_reg[7]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Mapping 'EV3a_DP_OP_4886J1_128_390_0'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:01  342341.8      0.50      41.4      95.4                           240228544.0000      0.00  
+    0:02:02  343511.3      0.00       0.0      95.5                           241297872.0000      0.00  
+    0:02:02  343511.3      0.00       0.0      95.5                           241297872.0000      0.00  
+    0:02:02  343507.9      0.00       0.0      95.5                           241303568.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:02:13  340929.6      0.00       0.0      95.5                           238079760.0000      0.00  
+    0:02:19  338465.0      0.00       0.0      95.2                           235638384.0000      0.00  
+    0:02:20  337139.3      0.00       0.0      94.9                           233924576.0000      0.00  
+    0:02:20  337139.3      0.00       0.0      94.9                           233924576.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:21  337351.5      0.00       0.0      94.9                           234100736.0000      0.00  
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+    0:02:21  337460.1      0.00       0.0       0.0                           234225792.0000      0.00  
+    0:02:21  337460.1      0.00       0.0       0.0                           234225792.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:21  337460.1      0.00       0.0       0.0                           234225792.0000      0.00  
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+    0:02:33  336647.0      0.17     112.9       0.0                           231397424.0000      0.00  
+    0:02:42  353532.8      0.08       4.1       5.2                           246325664.0000      0.00  
+    0:02:42  353532.8      0.08       4.1       5.2                           246325664.0000      0.00  
+    0:02:45  342798.4      0.08       1.4       0.8                           235614880.0000      0.00  
+    0:02:45  342798.4      0.08       1.4       0.8                           235614880.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:47  345196.8      0.00       0.0       1.1                           237831744.0000      0.00  
+    0:02:51  335961.3      0.00       0.0       1.0                           229849088.0000      0.00  
+    0:02:51  335961.3      0.00       0.0       1.0                           229850560.0000      0.00  
+    0:02:51  335961.3      0.00       0.0       1.0                           229850560.0000      0.00  
+    0:02:53  334883.4      0.00       0.0       0.7                           228948224.0000      0.00  
+    0:02:59  332111.6      0.00       0.0       0.7                           226337712.0000      0.00  
+    0:03:01  331335.9      0.00       0.0       0.0                           225273104.0000      0.00  
+    0:03:01  331335.9      0.00       0.0       0.0                           225273104.0000      0.00  
+    0:03:01  331335.9      0.00       0.0       0.0                           225273104.0000      0.00  
+    0:03:01  331335.9      0.00       0.0       0.0                           225273104.0000      0.00  
+    0:03:09  323723.0      0.00       0.0       0.0                           219105792.0000      0.00  
+Loading db file '/usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/fast.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'EV3a' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 3851 load(s), 1 driver(s)
+  Loading target library 'fast'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#======================================================
+#  Output Reports 
+#======================================================
+report_timing >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_power >  Report/$DESIGN\.power
+report_resource >  Report/$DESIGN\.resource
+#======================================================
+#  Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/home/rain/EC_FINAL/verilog/Netlist/EV3a_SYN.v'.
+1
+#set_annotated_delay 0 -cell -to [get_pins -filter "pin_direction == out" -of_objects [get_cells "GATED_*/U*" -filter "ref_name==OR2X1"]]
+#set_annotated_delay 0 -cell -to [get_pins -filter "pin_direction == out" -of_objects [get_cells "GATED_*/latch*" -filter "ref_name==TLATRX1"]]
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/home/rain/EC_FINAL/verilog/Netlist/EV3a_SYN.sdf'. (WT-3)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  Finish and Quit
+#======================================================
+exit
+
+Thank you...

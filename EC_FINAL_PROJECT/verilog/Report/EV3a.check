@@ -1,0 +1,35 @@
+ 
+****************************************
+check_design summary:
+Version:     N-2017.09-SP2
+Date:        Fri Dec 16 21:44:30 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              21
+    Cells do not drive (LINT-1)                                    21
+--------------------------------------------------------------------------------
+
+Warning: In design 'EV3a', cell 'C23900' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C23916' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C23975' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C23986' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24029' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24032' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24035' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24038' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24041' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24044' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24047' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24050' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24053' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24056' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24059' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24419' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24420' does not drive any nets. (LINT-1)
+Warning: In design 'EV3a', cell 'C24421' does not drive any nets. (LINT-1)
+Warning: In design 'fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8', cell 'C2756' does not drive any nets. (LINT-1)
+Warning: In design 'fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8', cell 'C2763' does not drive any nets. (LINT-1)
+Warning: In design 'fitness_eval_NUM_PARTICLE_TYPE3_DATA_WIDTH4_PARTICLE_LENGTH2_LATTICE_LENGTH11_SELF_FIT_LENGTH10_INDIVIDUAL_LENGTH22_POP_SIZE40_IDX_WIDTH8', cell 'C2766' does not drive any nets. (LINT-1)
+1

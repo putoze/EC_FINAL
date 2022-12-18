@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : EV3a
+Version: N-2017.09-SP2
+Date   : Fri Dec 16 21:38:17 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           94
+Number of nets:                         36790
+Number of cells:                        33454
+Number of combinational cells:          29602
+Number of sequential cells:              3852
+Number of macros/black boxes:               0
+Number of buf/inv:                       3828
+Number of references:                     182
+
+Combinational area:             377795.409625
+Buf/Inv area:                    48908.883990
+Noncombinational area:          141381.535046
+Macro/Black Box area:                0.000000
+Net Interconnect area:         4121994.147064
+
+Total cell area:                519176.944671
+Total area:                    4641171.091735
+1

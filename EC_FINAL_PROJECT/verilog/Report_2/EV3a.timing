@@ -1,0 +1,74 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'EV3a' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : EV3a
+Version: N-2017.09-SP2
+Date   : Fri Dec 16 21:38:16 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: pop_offspring_rf_reg[20][27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pop_offspring_rf_reg[22][9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  EV3a               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  pop_offspring_rf_reg[20][27]/CK (DFFRX4)                0.00 #     0.50 r
+  pop_offspring_rf_reg[20][27]/Q (DFFRX4)                 0.58       1.08 f
+  U32890/Y (NAND2X6)                                      0.12       1.21 r
+  U25578/Y (NAND2X6)                                      0.07       1.27 f
+  U32551/Y (OAI21X4)                                      0.17       1.44 r
+  U24938/Y (NAND4X6)                                      0.13       1.56 f
+  U27872/Y (NAND2X8)                                      0.11       1.67 r
+  U33776/Y (BUFX20)                                       0.17       1.84 r
+  U38412/Y (MXI2X4)                                       0.20       2.04 f
+  U38413/Y (NAND2X4)                                      0.14       2.18 r
+  U31816/Y (NAND2X8)                                      0.10       2.28 f
+  U24664/Y (OAI21X4)                                      0.16       2.44 r
+  U24663/Y (NAND2X6)                                      0.10       2.54 f
+  U26940/Y (NAND3X8)                                      0.11       2.65 r
+  U25690/Y (BUFX20)                                       0.12       2.77 r
+  U32572/Y (NAND2X8)                                      0.07       2.84 f
+  U24242/Y (INVX20)                                       0.07       2.91 r
+  U24240/Y (INVX20)                                       0.06       2.97 f
+  U24299/Y (INVX20)                                       0.04       3.01 r
+  U35629/Y (NAND2X8)                                      0.14       3.15 f
+  U36202/Y (BUFX20)                                       0.16       3.31 f
+  U36735/Y (OAI22X4)                                      0.13       3.44 r
+  U24243/Y (NOR2X6)                                       0.11       3.55 f
+  U24247/Y (NAND3BX4)                                     0.10       3.65 r
+  pop_offspring_rf_reg[22][9]/D (DFFRX1)                  0.00       3.65 r
+  data arrival time                                                  3.65
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.50       3.50
+  clock uncertainty                                      -0.10       3.40
+  pop_offspring_rf_reg[22][9]/CK (DFFRX1)                 0.00       3.40 r
+  library setup time                                     -0.24       3.16
+  data required time                                                 3.16
+  --------------------------------------------------------------------------
+  data required time                                                 3.16
+  data arrival time                                                 -3.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.48
+
+
+1

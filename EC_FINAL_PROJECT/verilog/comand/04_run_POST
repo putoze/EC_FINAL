@@ -1,0 +1,1 @@
+ncverilog tb.v -define POST -debug -v tsmc13_neg.v +access+rw | tee Post_sim/ncverilog.log 
