@@ -18,7 +18,7 @@
 ## III. Design-Flow-Chart
 ### <div align="left"> ASM Chart </div>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/97605863/208284879-3eed16d6-5d95-4759-8b60-6f1494d467db.png" width="200" heigh ="400"/>
+  <img src="https://user-images.githubusercontent.com/97605863/208284879-3eed16d6-5d95-4759-8b60-6f1494d467db.png" width="250" heigh ="400"/>
 </p> <br />
 
 ### <div align="left"> POP_RF </div>
@@ -59,12 +59,12 @@
 
 ### &emsp;a. LFSR 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/97605863/208285974-5d88a954-db5e-440d-ac99-feacd0d4fa9e.png" width="400" heigh ="260"/>
+  <img src="https://user-images.githubusercontent.com/97605863/208285974-5d88a954-db5e-440d-ac99-feacd0d4fa9e.png" width="400" heigh ="220"/>
 </p>
 
 ### &emsp;b. Evaluate Fitness
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/97605863/208285999-4ca2fb88-8f39-48c2-98ce-978cf80fc29d.jpg" width="500" heigh ="360"/>
+  <img src="https://user-images.githubusercontent.com/97605863/208285999-4ca2fb88-8f39-48c2-98ce-978cf80fc29d.jpg" width="450" heigh ="360"/>
 </p>
 
 ### &emsp;c. EV3a
