@@ -107,12 +107,13 @@
 </p>
 
 ## VI. Reference
-[1] Benjamin Doerr, Frank Neumann. Theory of Evolutionary  Computation. Springer Cham.2020. <br/>
-[2] G. Andrey and N. Thirer, "A FPGA implementation of hardware  based accelerator for a
-generic algorithm," 2010 IEEE 26-th Convention of Electricaland   Electronics Engineers in Israel, 2010, pp. 000578-000580,doi: 10.  1109/EEEI.2010.5662152 <br/>
+```
+[1] Benjamin Doerr, Frank Neumann. Theory of Evolutionary  Computation. Springer Cham.2020.
+[2] G. Andrey and N. Thirer, "A FPGA implementation of hardware  based accelerator for a generic algorithm," 2010 IEEE 26-th Convention of Electricaland   Electronics Engineers in Israel, 2010, pp. 000578-000580,doi: 10.  1109/EEEI.2010.5662152 
 [3] MIT 6.375 complex digital system. Arvind, 
-http://csg.csail.mit.edu/6.375/6_375_2019_www/index.html <br/>
-[4] Heather Berlin, Zachary Zumbo. Hardware Accelerated Genetic
-Optimization for PCB Layer Assignment . 
-http://csg.csail.mit.edu/6.375/6_375_2019_www/handouts/finals/Group_1_report.pdf <br/>
-[5] ECE 4514 Digital Design II Spring 2008 Lecture 6: A Random  Number Generator. Patrick Schaumont. https://schaumont.dyn.wpi.edu/schaum/teaching/4514s19/ 
+>>http://csg.csail.mit.edu/6.375/6_375_2019_www/index.html
+[4] Heather Berlin, Zachary Zumbo. Hardware Accelerated Genetic Optimization for PCB Layer Assignment . 
+>>http://csg.csail.mit.edu/6.375/6_375_2019_www/handouts/finals/Group_1_report.pdf
+[5] ECE 4514 Digital Design II Spring 2008 Lecture 6: A Random  Number Generator. Patrick Schaumont. 
+>>https://schaumont.dyn.wpi.edu/schaum/teaching/4514s19/ 
+```
