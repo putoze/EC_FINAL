@@ -18,11 +18,13 @@
   <img src="https://user-images.githubusercontent.com/97605863/208288484-bb7d2b86-4a70-4aba-8949-792c398b9404.png" width="600" heigh ="600"/>
 </p>
 
-### CR_MU_EF
+### CrossOver and mutate Data Path
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97605863/208288526-b362a076-e5f0-4335-a3d4-90381edb06c0.png" width="1000" heigh ="1000"/>
 </p>
+
+### Evaluate Fitness Data path
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97605863/208288555-79b66e38-ee67-452f-a02d-f1ecef44c2a3.png" width="1000" heigh ="1000"/>

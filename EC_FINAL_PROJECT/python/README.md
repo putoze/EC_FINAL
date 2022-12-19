@@ -1,6 +1,6 @@
 # EV3a 
 
-## Hints
+## Some Suggestion
 &emsp;&emsp;Before you start this project.,some background knowledge you must need to know: First,you have to know what "Evalutionary Calculation" is. I strongly suggest you to have the class before starting. Second, some accelerating skills on hardware will be used in this design. For example, pipelining, caching and so on. Wish you have a good time for learning it~~
 
 ## Tips for you to implement this design on hardware
