@@ -64,7 +64,7 @@
 
 ### &emsp;b. Evaluate Fitness
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/97605863/208361207-7f4551c4-94e6-46bb-b3d9-465ede31a6ed.jpg" width="450" heigh ="360"/>
+  <img src="https://user-images.githubusercontent.com/97605863/208361207-7f4551c4-94e6-46bb-b3d9-465ede31a6ed.jpg" width="600" heigh ="460"/>
 </p>
 
 ### &emsp;c. EV3a
