@@ -18,16 +18,23 @@
   <img src="https://user-images.githubusercontent.com/97605863/208288484-bb7d2b86-4a70-4aba-8949-792c398b9404.png" width="600" heigh ="600"/>
 </p>
 
-### CrossOver and mutate Data Path
+### Tourment, CrossOver and mutate Data Path
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/97605863/208288526-b362a076-e5f0-4335-a3d4-90381edb06c0.png" width="1000" heigh ="1000"/>
+  <img src="https://user-images.githubusercontent.com/97605863/208344561-ea556732-7c6e-4927-85d9-40430ad9afb8.png" width="1000" heigh ="1000"/>
 </p>
+
+### Tourment, CrossOver and mutate Data Path Detail
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97605863/208344681-6762b659-7fae-4a37-9a03-55ac4ec84751.png" width="1000" heigh ="1000"/>
+</p>
+
 
 ### Evaluate Fitness Data path
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/97605863/208288555-79b66e38-ee67-452f-a02d-f1ecef44c2a3.png" width="1000" heigh ="1000"/>
+  <img src="https://user-images.githubusercontent.com/97605863/208344472-8d182392-5145-43c7-b699-919556126ab5.png" width="1000" heigh ="1000"/>
 </p>
 
 ## software vs. hardware
