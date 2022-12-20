@@ -15,16 +15,17 @@
 
 &emsp;&emsp;Since EV3a algorithm has already existed. As a result, we would like toimprove it performance by realizing a specific hardware architecture.Common technique in digital design involve pipelining, caching and so on.In this final project, we’ll be using these technique to reduce timecomplexity of EV3a algorithm.
 
-## III. Design-Flow-Chart
-### <div align="left"> ASM Chart </div>
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/97605863/208284879-3eed16d6-5d95-4759-8b60-6f1494d467db.png" width="250" heigh ="400"/>
-</p> <br />
+<div style="page-break-after: always;"></div>
 
-### <div align="left"> POP_RF </div>
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/97605863/208285464-37319159-0fa4-459d-90c4-42090a2c6837.png" width="150" heigh ="200"/>
-</p>
+## III. Design-Flow-Chart
+
+<center>
+
+ |ASM Chart                |  POP_RF|
+:-------------------------:|:-------------------------:
+  <img src="https://user-images.githubusercontent.com/97605863/208284879-3eed16d6-5d95-4759-8b60-6f1494d467db.png" width="200" heigh ="400" />  |  <img src="https://user-images.githubusercontent.com/97605863/208285464-37319159-0fa4-459d-90c4-42090a2c6837.png" width="150" heigh ="200"/>
+
+<div style="page-break-after: always;"></div>
 
 ## IV. Hardware-Structure
 
