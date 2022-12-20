@@ -1,8 +1,8 @@
 # Hardware accelerator for EV3a
 
 
-&emsp;[Python README Linking ](/EC_FINAL_PROJECT/python/README.md) <br/>
-&emsp;[Verilog README Linking](/EC_FINAL_PROJECT/verilog/README.md) 
+&emsp;&emsp;[Python README Linking ](/EC_FINAL_PROJECT/python/README.md) <br/>
+&emsp;&emsp;[Verilog README Linking](/EC_FINAL_PROJECT/verilog/README.md) 
 
 ## I.  Table of content
 1. [Introduction](#ii-introduction)
@@ -20,6 +20,7 @@
 
 ## III. Design-Flow-Chart
 
+
 <div align="center">
 
  |ASM Chart                |  POP_RF|
@@ -31,7 +32,6 @@
 <div style="page-break-after: always;"></div>
 
 ## IV. Hardware-Structure 
-<br />
 
 ## <div align="left"> Block Diagram </div> 
 <p align="left">
@@ -79,7 +79,6 @@
 <br/>
 
 ## <div align="left"> Synthesize Result </div>
-<br>
 
 ### &emsp;a. Area Report
 <p align="justify">
@@ -96,7 +95,7 @@
   &emsp;<img src="https://user-images.githubusercontent.com/97605863/208286355-433d4854-dc0d-4c0f-9e9b-126dcd1b3803.png" width="700" heigh ="500"/>
 </p>
 
-### <div align="left"> Gate-level simulation </div>
+## <div align="left"> Gate-level simulation </div>
 
 <p align="justify">
   <img src="https://user-images.githubusercontent.com/97605863/208286421-3628a0e2-6cba-4240-ad64-0fd88526feb0.png" width="800" heigh ="400"/>
@@ -106,26 +105,27 @@
   <img src="https://user-images.githubusercontent.com/97605863/208286427-3cb14842-eff3-44b4-8188-a1489d14d7fb.png" width="900" heigh ="800"/>
 </p>
 
-### <div align="left"> APR </div>
+## <div align="left"> APR </div>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97605863/208286437-80808bef-a2d3-4f82-b35c-55a7078371f4.png" width="600" heigh ="600"/>
 </p>
 
 ## VI. Reference
+
 ```
 [1] Benjamin Doerr, Frank Neumann. Theory of Evolutionary  Computation. Springer Cham.2020.
 [2] G. Andrey and N. Thirer, "A FPGA implementation of hardware  based accelerator for a generic algorithm," 2010 IEEE 26-th Convention of Electricaland   Electronics Engineers in Israel, 2010, pp. 000578-000580,doi: 10.  1109/EEEI.2010.5662152 
 [3] MIT 6.375 complex digital system. Arvind, 
->>http://csg.csail.mit.edu/6.375/6_375_2019_www/index.html
+>> http://csg.csail.mit.edu/6.375/6_375_2019_www/index.html
 [4] Heather Berlin, Zachary Zumbo. Hardware Accelerated Genetic Optimization for PCB Layer Assignment . 
->>http://csg.csail.mit.edu/6.375/6_375_2019_www/handouts/finals/Group_1_report.pdf
+>> http://csg.csail.mit.edu/6.375/6_375_2019_www/handouts/finals/Group_1_report.pdf
 [5] ECE 4514 Digital Design II Spring 2008 Lecture 6: A Random  Number Generator. Patrick Schaumont. 
->>https://schaumont.dyn.wpi.edu/schaum/teaching/4514s19/ 
+>> https://schaumont.dyn.wpi.edu/schaum/teaching/4514s19/ 
 ```
 
 ## VII. ACKNOWLEDGMENT
 
 &emsp;&emsp;We would like to ackowledge Professor Lindor for his mentorship and guidance throughout the research, design and implementation of this project. Without him, there would be no final implementation of this project, so as my EC Teammate. You can fellow their github. Here is the superconnection of their github. Thanks~ <br>
-&emsp;>> sicajc : https://github.com/sicajc <br>
-&emsp;>> Alchemist-Kang : https://github.com/Alchemist-Kang <br>
+&emsp;&emsp;sicajc : https://github.com/sicajc <br>
+&emsp;&emsp;Alchemist-Kang : https://github.com/Alchemist-Kang <br>
