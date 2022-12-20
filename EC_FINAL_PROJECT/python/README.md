@@ -8,7 +8,6 @@
 2. [Genetic-Algorithm](#ii-genetic-algorithm) 
 3. [Problem-specification](#iii-problem-specification--objectives)
 4. [Tips](#tips-for-you-to-implement-this-design-on-hardware)
-5. [ACKNOWLEDGMENT](#acknowledgment)
 
 # I. Introduction
 &emsp;&emsp;Genetic Algorithm is based on the biological concept of Darwinian evolution. In nature, variations in genetic material (i.e. DNA) gives rise to small differences in physical expression, which affects an individual creature’s ability to mate and survive in a process called natural selection. This phenomenon is named such because the changes occur naturally through genetic operators called crossover (mating) and mutation, and generally the most well adapted creatures are able to find food, a mate, and evade prey.<br />
@@ -114,9 +113,5 @@ We will represent our lattice as a sequence of integer number,denoted L as latti
 python ev3a.py --input ev3a_example.cfg
 ```
 
-## ACKNOWLEDGMENT
 
-&emsp;&emsp;We would like to ackowledge Professor Lindor for his mentorship and guidance throughout the research, design and implementation of this project. Without him, there would be no final implementation of this project, so as my EC Teammate. You can fellow their github. Here is the superconnection of their github. Thanks~ <br>
-sicajc : https://github.com/sicajc <br>
-Alchemist-Kang : https://github.com/Alchemist-Kang <br>
 

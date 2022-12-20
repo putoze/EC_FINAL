@@ -10,6 +10,7 @@
 3. [Hardware Structure](#iv-hardware-structure)
 4. [Result](#v-result)
 5. [Reference](#vi-reference)
+6. [ACKNOWLEDGMENT](#vii-acknowledgment)
 
 ## II. Introduction
 
@@ -19,22 +20,25 @@
 
 ## III. Design-Flow-Chart
 
-<center>
+<div align="center">
 
  |ASM Chart                |  POP_RF|
 :-------------------------:|:-------------------------:
   <img src="https://user-images.githubusercontent.com/97605863/208602039-e02016c9-8077-4ea6-abbc-8d8c11aa9106.png" width="200" heigh ="400" />  |  <img src="https://user-images.githubusercontent.com/97605863/208285464-37319159-0fa4-459d-90c4-42090a2c6837.png" width="150" heigh ="200"/>
 
+</div>
+
 <div style="page-break-after: always;"></div>
 
-## IV. Hardware-Structure
+## IV. Hardware-Structure 
+<br />
 
-### <div align="left"> Block Diagram </div>
+## <div align="left"> Block Diagram </div> 
 <p align="left">
   <img src="https://user-images.githubusercontent.com/97605863/208285568-356b668a-6583-4c13-9589-caa908575a13.png" width="600" heigh ="400"/>
 </p>
 
-### <div align="left"> Input-out-interface </div>
+## <div align="left"> Input-out-interface </div>
 
 ### &emsp;a. EV3a Data Config
 <p align="left">
@@ -56,7 +60,7 @@
 
 ## V. Result
 
-### <div align="left"> RTL simulation </div>
+## <div align="left"> RTL simulation </div>
 
 ### &emsp;a. LFSR 
 <p align="left">
@@ -74,7 +78,8 @@
 </p>
 <br/>
 
-### <div align="left"> Synthesize Result </div>
+## <div align="left"> Synthesize Result </div>
+<br>
 
 ### &emsp;a. Area Report
 <p align="justify">
@@ -98,7 +103,7 @@
 </p>
 
 <p align="justify">
-  <img src="https://user-images.githubusercontent.com/97605863/208286427-3cb14842-eff3-44b4-8188-a1489d14d7fb.png" width="1000" heigh ="800"/>
+  <img src="https://user-images.githubusercontent.com/97605863/208286427-3cb14842-eff3-44b4-8188-a1489d14d7fb.png" width="900" heigh ="800"/>
 </p>
 
 ### <div align="left"> APR </div>
@@ -118,3 +123,9 @@
 [5] ECE 4514 Digital Design II Spring 2008 Lecture 6: A Random  Number Generator. Patrick Schaumont. 
 >>https://schaumont.dyn.wpi.edu/schaum/teaching/4514s19/ 
 ```
+
+## VII. ACKNOWLEDGMENT
+
+&emsp;&emsp;We would like to ackowledge Professor Lindor for his mentorship and guidance throughout the research, design and implementation of this project. Without him, there would be no final implementation of this project, so as my EC Teammate. You can fellow their github. Here is the superconnection of their github. Thanks~ <br>
+&emsp;>> sicajc : https://github.com/sicajc <br>
+&emsp;>> Alchemist-Kang : https://github.com/Alchemist-Kang <br>
