@@ -116,7 +116,7 @@ python ev3a.py --input ev3a_example.cfg
 
 ## ACKNOWLEDGMENT
 
-&emsp;&emsp;We would like to ackowledge Professor Lindor for his mentorship and guidance throughout the research, design and implementation of this project. Without him, there would be no final implementation of this project. So as my EC Teammate. You can fellow their github. Here is the superconnection of their github. Thanks~ <br>
+&emsp;&emsp;We would like to ackowledge Professor Lindor for his mentorship and guidance throughout the research, design and implementation of this project. Without him, there would be no final implementation of this project, so as my EC Teammate. You can fellow their github. Here is the superconnection of their github. Thanks~ <br>
 sicajc : https://github.com/sicajc <br>
 Alchemist-Kang : https://github.com/Alchemist-Kang <br>
 
