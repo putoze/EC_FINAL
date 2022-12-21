@@ -8,7 +8,6 @@
 4. [Execuate](#iv-command)
 
 ## I. Hardward Structure
-<br>
 
 ## OverView
 <p align="center">
@@ -41,20 +40,17 @@
 </p>
 
 ## II. Software vs. Hardware
-<br>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97605863/208288629-12a0fadb-1745-417d-9b79-b413c99e030f.png" width="600" heigh ="600"/>
 </p>
 
 ## III. Result
-<br>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97605863/208288751-27ec5f8f-1c60-4759-b517-57d66db884f2.jpg" width="600" heigh ="600"/>
 
 ## IV. Command
-<br>
 
 ```
 # Run Ncverilog RTL simulation 

@@ -1,4 +1,4 @@
-# <p style="text-align: center;">Genetic Algorithm</p>
+# <div align="center"> Genetic Algorithm </div>
 
 ## Suggestion
 &emsp;&emsp;Before you start this project.,some background knowledge you must need to know: First,you have to know what "Evalutionary Calculation" is. I strongly suggest you to have the class before starting. Second, some accelerating skills on hardware will be used in this design. For example, pipelining, caching and so on. Wish you have a good time for learning it~~
@@ -71,7 +71,7 @@ solve the problem faster than we’d otherwise be able to if we used software al
   <img src="images/Combinatorial_Energy_minimization_1.png" width="600" heigh ="600"/>
 </p>
 
-Our task is to minimize the total energy of a given lattice of length N
+&emsp;&emsp;Our task is to minimize the total energy of a given lattice of length N
 by choosing the correct assignment of particle types on the lattice
 
 ## 2. Lattice
@@ -79,7 +79,7 @@ by choosing the correct assignment of particle types on the lattice
   <img src="images/lattice_visualization.png" width="600" heigh ="600"/>
 </p>
 
-We will represent our lattice as a sequence of integer number,denoted L as lattice where L=[x_1,x_2,x_3,........] where x of i is an integer value corresponds to a certain particle type.
+&emsp;&emsp;We will represent our lattice as a sequence of integer number,denoted L as lattice where L=[x_1,x_2,x_3,........] where x of i is an integer value corresponds to a certain particle type.
 
 ## 3. Self-Energy Vector
 <p align="center">
@@ -91,13 +91,16 @@ We will represent our lattice as a sequence of integer number,denoted L as latti
   <img src="images/self-energy-vector.png" width="600" heigh ="600"/>
 </p>
 
-
 ## 5. Fitness Function
 <p align="center">
   <img src="images/Total_Energy_function.png" width="600" heigh ="600"/>
 </p>
 &emsp;&emsp;Goal is to find the lattice that contains the minimal Energy, this is the total Energy function used for calculation.
-<br /><br />
+
+## 6. Question
+<p align="center">
+  <img src="images/Question.png" width="600" heigh ="600"/>
+</p>
 
 # Tips for you to implement this design on hardware
 
