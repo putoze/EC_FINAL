@@ -32,12 +32,58 @@
   <img src="https://user-images.githubusercontent.com/97605863/208344681-6762b659-7fae-4a37-9a03-55ac4ec84751.png" width="1000" heigh ="1000"/>
 </p>
 
+### Tourment
+```
+POP :
+for _ in range(len(self.population)):
+    if self[index1].fit >= self[index2].fit:
+        newPop.append(copy.deepcopy(self[index1]))
+    elif self[index1].fit < self[index2].fit:
+        newPop.append(copy.deepcopy(self[index2]))
+    index1 += 1
+    index2 += 1
+```
+
+### CrossOver
+```
+POP :
+for _ in range(len(self.population)):
+    rn = self.uniprng.randint(1, 255)/255
+    if rn < self.crossoverFraction:
+        self[index1].crossover(self[index2])
+    index1 += 1
+    index2 += 1
+IND:
+for i in range(self.nLength):
+    if (self.uniprng.randint(1, 255)/255) < 0.5:
+        tmp = self.state[i]
+        self.state[i] = other.state[i]
+        other.state[i] = tmp
+```
+
+### Mutate
+```
+IND :
+for i in range(self.nLength):
+    if (self.uniprng.randint(1, 255)/255) < self.mutRate:
+        self.state[i] = self.uniprng.randint(0, self.nItems-1)
+```
+
 
 ## Evaluate Fitness Data path
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97605863/208344472-8d182392-5145-43c7-b699-919556126ab5.png" width="1000" heigh ="1000"/>
 </p>
+
+```
+for i in range(len(state)):
+    # self energy
+    totalEnergy += cls.selfEnergy[state[i]]
+    # interaction energy
+    if i > 0:
+        totalEnergy += 2*cls.interactionEnergy[state[i-1]][state[i]]
+```
 
 ## II. Software vs. Hardware
 
