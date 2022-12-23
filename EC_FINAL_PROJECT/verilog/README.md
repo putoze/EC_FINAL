@@ -5,7 +5,6 @@
 1. [Hardware structure](#i-hardward-structure)
 2. [software vs. hardware](#ii-software-vs-hardware)
 3. [Result](#iii-result)
-4. [Execuate](#iv-command)
 
 ## I. Hardward Structure
 
@@ -95,18 +94,3 @@ for i in range(len(state)):
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97605863/208288751-27ec5f8f-1c60-4759-b517-57d66db884f2.jpg" width="600" heigh ="600"/>
-
-## IV. Command
-
-```
-# Run Ncverilog RTL simulation 
-sh 01_run_RTL  
-# Run synthesize
-sh 03_run_dc
-# Run Gate Level simulation
-sh 02_run_Gate
-# Run Post sim
-sh 04_run_POST
-# Run clean file
-sh 09_clean_up
-```

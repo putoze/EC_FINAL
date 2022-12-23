@@ -70,12 +70,53 @@ reg [2:0] currentState_CRX,currentState_MU,currentState_EF;
 reg [IND_REG_LENGTH-1:0] pop_rf [0:POP_SIZE-1];
 reg [IND_REG_LENGTH-1:0] pop_offspring_rf [0:POP_SIZE-1];
 
+//Testing wire_off
+wire [INT8_LENGTH-1:0] Mutate_rate_off[0:POP_SIZE-1];
+wire [PARTICLE_LENGTH-1:0] ind_state_off[0:POP_SIZE-1][0:LATTICE_LENGTH-1];
+wire [IND_FIT_LENGTH-1:0] ind_fit_off[0:POP_SIZE-1];
+
+generate
+    for(idx_i=0;idx_i<POP_SIZE;idx_i=idx_i+1) begin
+        assign Mutate_rate_off[idx_i] = pop_offspring_rf[idx_i][39:32];
+        assign ind_fit_off[idx_i] = pop_offspring_rf[idx_i][31:22];
+    end
+endgenerate
+
+generate
+    for(idx_i=0;idx_i<POP_SIZE;idx_i=idx_i+1) begin
+        for (idx_j=0;idx_j<LATTICE_LENGTH;idx_j=idx_j+1) begin
+            assign ind_state_off[idx_i][idx_j] = pop_offspring_rf[idx_i][PARTICLE_LENGTH*idx_j +: PARTICLE_LENGTH];
+        end
+    end
+endgenerate
+
+//Testing wire_pop
+wire [INT8_LENGTH-1:0] Mutate_rate_pop[0:POP_SIZE-1];
+wire [PARTICLE_LENGTH-1:0] ind_state_pop[0:POP_SIZE-1][0:LATTICE_LENGTH-1];
+wire [IND_FIT_LENGTH-1:0] ind_fit_pop[0:POP_SIZE-1];
+
+generate
+    for(idx_i=0;idx_i<POP_SIZE;idx_i=idx_i+1) begin
+        assign Mutate_rate_pop[idx_i] = pop_offspring_rf[idx_i][39:32];
+        assign ind_fit_pop[idx_i] = pop_offspring_rf[idx_i][31:22];
+    end
+endgenerate
+
+generate
+    for(idx_i=0;idx_i<POP_SIZE;idx_i=idx_i+1) begin
+        for (idx_j=0;idx_j<LATTICE_LENGTH;idx_j=idx_j+1) begin
+            assign ind_state_pop[idx_i][idx_j] = pop_offspring_rf[idx_i][PARTICLE_LENGTH*idx_j +: PARTICLE_LENGTH];
+        end
+    end
+endgenerate
+
 //====== module inout ======
 //------ random_number ------
 //input
 wire random_start = global_counter[3];
 //output
 wire [INT8_LENGTH-1:0] random_num_vec_o [0:LATTICE_LENGTH-1];
+
 //------ evaluate_fitness ------
 //input
 reg  [ENERGY_LENGTH-1:0] self_energy_r,interact_energy_r;
@@ -149,28 +190,10 @@ wire [IND_REG_LENGTH-1:0] compare_result_2 [0:2*POP_SIZE-1];
 //TRUN_flag
 wire truncate_valid = current_state == TRUNCATE_POP && !stall;
 
-//Testing wire
-wire [INT8_LENGTH-1:0] Mutate_rate[0:POP_SIZE-1];
-wire [PARTICLE_LENGTH-1:0] ind_state[0:POP_SIZE-1][0:LATTICE_LENGTH-1];
-wire [IND_FIT_LENGTH-1:0] ind_fit[0:POP_SIZE-1];
-
+//------ evaluate_fitness ------
+// IO
 assign OffState_EF = newState_MU;
 assign wbidx_EF = idx_ptr_2_d2;
-
-generate
-    for(idx_i=0;idx_i<POP_SIZE;idx_i=idx_i+1) begin
-        assign Mutate_rate[idx_i] = pop_offspring_rf[idx_i][39:32];
-        assign ind_fit[idx_i] = pop_offspring_rf[idx_i][31:22];
-    end
-endgenerate
-
-generate
-    for(idx_i=0;idx_i<POP_SIZE;idx_i=idx_i+1) begin
-        for (idx_j=0;idx_j<LATTICE_LENGTH;idx_j=idx_j+1) begin
-            assign ind_state[idx_i][idx_j] = pop_offspring_rf[idx_i][PARTICLE_LENGTH*idx_j +: PARTICLE_LENGTH];
-        end
-    end
-endgenerate
 
 //FSM_flag
 wire pipeline_done = global_counter == POP_SIZE - 1;
