@@ -111,6 +111,12 @@
   <img src="https://user-images.githubusercontent.com/97605863/208286437-80808bef-a2d3-4f82-b35c-55a7078371f4.png" width="600" heigh ="600"/>
 </p>
 
+## <div align="left"> SW v.s HW </div>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97605863/209502501-0df5271d-2e26-4f00-9ebe-5d0423abc0d1.png" width="600" heigh ="600"/>
+</p>
+
 ## VI. Reference
 
 ```
