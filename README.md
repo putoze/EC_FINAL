@@ -117,6 +117,12 @@
   <img src="https://user-images.githubusercontent.com/97605863/209502501-0df5271d-2e26-4f00-9ebe-5d0423abc0d1.png" width="600" heigh ="600"/>
 </p>
 
+## <div align="left"> Table of result </div>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97605863/209506691-61f18ca0-e7d5-485b-ad99-49fd41531abc.png" width="600" heigh ="600"/>
+</p>
+
 ## VI. Reference
 
 ```
