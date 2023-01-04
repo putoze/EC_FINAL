@@ -136,7 +136,7 @@
 >> https://schaumont.dyn.wpi.edu/schaum/teaching/4514s19/ 
 ```
 
-## VII. ACKNOWLEDGMENT
+## VII. Acknowledgement
 
 &emsp;&emsp;We would like to ackowledge Professor Lindor for his mentorship and guidance throughout the research, design and implementation of this project. Without him, there would be no final implementation of this project, so as my EC Teammate. You can fellow their github. Here is the superconnection of their github. Thanks~ <br>
 &emsp;&emsp;sicajc : https://github.com/sicajc <br>
