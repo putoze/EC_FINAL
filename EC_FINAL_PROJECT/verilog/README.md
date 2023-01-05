@@ -19,6 +19,21 @@
   <img src="https://user-images.githubusercontent.com/97605863/208288484-bb7d2b86-4a70-4aba-8949-792c398b9404.png" width="600" heigh ="600"/>
 </p>
 
+## Evaluate Fitness Data path
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97605863/208344472-8d182392-5145-43c7-b699-919556126ab5.png" width="1000" heigh ="1000"/>
+</p>
+
+```
+for i in range(len(state)):
+    # self energy
+    totalEnergy += cls.selfEnergy[state[i]]
+    # interaction energy
+    if i > 0:
+        totalEnergy += 2*cls.interactionEnergy[state[i-1]][state[i]]
+```
+
 ## Tourment, CrossOver and mutate Data Path
 
 <p align="center">
@@ -68,21 +83,23 @@ for i in range(self.nLength):
         self.state[i] = self.uniprng.randint(0, self.nItems-1)
 ```
 
-
-## Evaluate Fitness Data path
+### Truncate
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/97605863/208344472-8d182392-5145-43c7-b699-919556126ab5.png" width="1000" heigh ="1000"/>
+  <img src="https://user-images.githubusercontent.com/97605863/210695186-8ad9c719-7f0b-45aa-bf23-c83cee57fe08.jpg" width="600" heigh ="600"/>
 </p>
 
 ```
-for i in range(len(state)):
-    # self energy
-    totalEnergy += cls.selfEnergy[state[i]]
-    # interaction energy
-    if i > 0:
-        totalEnergy += 2*cls.interactionEnergy[state[i-1]][state[i]]
+def BubbleSort(data):
+    n = len(data)
+    while n > 1:
+        n-=1
+        for i in range(n):        
+            if data[i] > data[i+1]:  
+                data[i], data[i+1] = data[i+1], data[i]
+    return data
 ```
+
 
 ## II. Software vs. Hardware
 
