@@ -105,12 +105,6 @@
   <img src="https://user-images.githubusercontent.com/97605863/208286427-3cb14842-eff3-44b4-8188-a1489d14d7fb.png" width="900" heigh ="800"/>
 </p>
 
-## <div align="left"> APR </div>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/97605863/208286437-80808bef-a2d3-4f82-b35c-55a7078371f4.png" width="600" heigh ="600"/>
-</p>
-
 ## <div align="left"> SW v.s HW </div>
 
 <p align="center">
