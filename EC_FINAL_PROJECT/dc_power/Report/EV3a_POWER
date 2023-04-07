@@ -1,0 +1,53 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'EV3a' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: There are 25267 switching activity information conflicts. (PWR-19)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : EV3a
+Version: N-2017.09-SP2
+Date   : Fri Apr  7 20:25:14 2023
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  15.1028 mW   (85%)
+  Net Switching Power  =   2.7452 mW   (15%)
+                         ---------
+Total Dynamic Power    =  17.8480 mW  (100%)
+
+Cell Leakage Power     = 182.7475 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          13.8672            0.5672        1.1438e+08           14.5488  (  80.69%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      1.2356            2.1780        6.8368e+07            3.4819  (  19.31%)
+--------------------------------------------------------------------------------------------------
+Total             15.1028 mW         2.7452 mW     1.8275e+08 pW        18.0307 mW
+1

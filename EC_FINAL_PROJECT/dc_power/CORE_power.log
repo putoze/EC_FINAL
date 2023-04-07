@@ -1,0 +1,64 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version N-2017.09-SP2 for linux64 - Nov 27, 2017 
+
+                    Copyright (c) 1988 - 2017 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/rain/.synopsys_dv_prefs.tcl
+source /usr/cad/Design_Kit/synopsys_dc.setup
+Information: Variable 'hdlin_translate_off_skip_text' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+1
+set DESIGN "EV3a"
+EV3a
+read_file -format ddc ./File/$DESIGN\_SYN.ddc
+Loading db file '/usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Reading ddc file '/home/rain/EC_FINAL/dc_power/File/EV3a_SYN.ddc'.
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Loaded 1 design.
+Loading db file '/usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/fast.db'
+Current design is 'EV3a'.
+EV3a
+read_saif -input $DESIGN.fsdb.saif -instance_name TESTBED/inst_$DESIGN
+Warning: There are 103344 objects not found during annotation. (PWR-452)
+1
+#read_saif -input $DESIGN\.fsdb.saif -instance_name TESTBED/inst_$DESIGN
+current_design $DESIGN
+Current design is 'EV3a'.
+{EV3a}
+link
+
+  Linking design 'EV3a'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  EV3a                        /home/rain/EC_FINAL/dc_power/File/EV3a_SYN.ddc
+  slow (library)              /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db
+  fast (library)              /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/fast.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+report_power > Report/$DESIGN\_POWER 
+exit
+
+Thank you...

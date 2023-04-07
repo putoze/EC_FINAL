@@ -1,0 +1,5 @@
+#step 1 translate fsdb or vcd into saif
+#fsdb2saif ./File/EV3a\_SYN.fsdb -o EV3a.fsdb.saif
+#step 2 execute tcl
+dc_shell -f saif_power.tcl | tee CORE_power.log
+

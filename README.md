@@ -91,8 +91,14 @@
 </p>
 
 ### &emsp;c. Power Report
+- prime time power
 <p align="justify">
   &emsp;<img src="https://user-images.githubusercontent.com/97605863/230585756-f4d66608-9240-4dd8-90ef-d48990e38cc7.png" width="700" heigh ="500"/>
+</p>
+
+- dc power(saif file)
+<p align="justify">
+  &emsp;<img src="https://user-images.githubusercontent.com/97605863/230609232-c1f629f5-a77e-40d9-ad1b-ab4e8422d6ff.png" width="700" heigh ="500"/>
 </p>
 
 ## <div align="left"> Gate-level simulation </div>
