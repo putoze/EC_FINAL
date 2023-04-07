@@ -92,7 +92,7 @@
 
 ### &emsp;c. Power Report
 <p align="justify">
-  &emsp;<img src="https://user-images.githubusercontent.com/97605863/208286355-433d4854-dc0d-4c0f-9e9b-126dcd1b3803.png" width="700" heigh ="500"/>
+  &emsp;<img src="https://user-images.githubusercontent.com/97605863/230585756-f4d66608-9240-4dd8-90ef-d48990e38cc7.png" width="700" heigh ="500"/>
 </p>
 
 ## <div align="left"> Gate-level simulation </div>

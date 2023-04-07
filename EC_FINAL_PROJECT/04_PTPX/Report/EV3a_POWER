@@ -1,0 +1,53 @@
+Information: Running time_based power analysis... (PWR-601)
+Information: Reading vcd file '/home/rain/EC_FINAL/04_PTPX/File/EV3a_SYN.fsdb'
+Information: The waveform options are:
+		File name:	vcd.out
+		File format:	out
+		Time interval:	1ns
+		Hierarchical level:	all
+
+Information: Power analysis is running, please wait ...
+
+Information: analysis is done for time window (0ns - 38094ns)
+
+Information: Total simulation time = 38094.000000 ns
+****************************************
+Report : Time Based Power
+Design : EV3a
+Version: R-2020.09
+Date   : Fri Apr  7 17:14:33 2023
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+register                   0.0143 1.523e-03 1.160e-04    0.0160 (76.74%)  i
+combinational           1.004e-03 3.729e-03 1.031e-04 4.836e-03 (23.26%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 5.252e-03   (25.26%)
+  Cell Internal Power  =    0.0153   (73.69%)
+  Cell Leakage Power   = 2.191e-04   ( 1.05%)
+    Intrinsic Leakage  = 2.191e-04
+    Gate Leakage       =    0.0000
+                         ---------
+Total Power            =    0.0208  (100.00%)
+
+X Transition Power     = 2.766e-08
+Glitching Power        =    0.0000
+
+Peak Power             =    0.1330
+Peak Time              =       819
+
+1
